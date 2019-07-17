@@ -1,0 +1,30 @@
+@import '__ASS__/css/fun.scss';
+.index-alert{
+    margin: appRem(30px) appRem(30px);
+    border: 1px solid #cccccc;
+    color: #999999;
+    height: appRem(72px);
+    border-radius: appRem(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.index-menu{
+    margin: appRem(30px) appRem(20px);
+}
+.index-price{
+    font-size: appRem(14px);
+    font-weight: normal;
+}
+
+.index-advert{
+    height: appRem(120px);
+    margin: 0 appRem(30px);
+    background: linear-gradient(left, #fff2d4, #ffdfb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: appRem(30px);
+    font-weight: bold;
+}
+

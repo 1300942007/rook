@@ -1,0 +1,184 @@
+@import '__ASS__/css/fun.scss';
+@import '__ASS__/css/list.scss';
+body{
+    font-size: 12px;
+    overflow-x: hidden;
+}
+// 按钮
+.button{
+    background: none;
+    color: #000000;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+// 图片
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+// 视频
+.video{
+    width: 100%;
+    height: 100%;
+}
+// 提示
+.alert-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background: rgba(0, 0, 0, 0.5);
+    .alert-info{
+        width: 80%;
+        background: #FFFFFF;
+        margin: 50% auto 0;
+        font-size: appRem(35px);
+        border-radius: appRem(10px);
+        overflow: hidden;
+        .alert-title{
+            width: 100%;
+            height: appRem(110px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+        .alert-text{
+            width: 100%;
+            min-height: appRem(110px);
+            line-height: appRem(45px);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: #999999;
+            padding: 0 10% 5%;
+            box-sizing: border-box;
+        }
+        .alert-button{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: appRem(1px) solid #eaeaea;
+            .alert-cancel, .alert-confirm{
+                flex: 1;
+                height: appRem(110px);
+                background: none;
+                color: #4b71ff;
+            }
+            .alert-cancel{
+                border-right: appRem(1px) solid #eaeaea;
+                color: #999999;
+            }
+        }
+    }
+}
+
+.app-box{
+    width: 100%;
+    min-height: 100%;
+    background: #FFFFFF;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    .head-box{
+        width: 100%;
+        height: appRem(100px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        display: flex;
+        box-sizing: border-box;
+        z-index: 10;
+        background: #FFFFFF;
+        .head-left, .head-right{
+            min-width: appRem(60px);
+            height: 100%;
+            padding: 0 appRem(20px);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: appRem(35px);
+        }
+        .head-text{
+            margin: 0 appRem(20px);
+            flex: 1;
+            height: 100%;
+            border-radius: appRem(30px);
+            overflow: hidden;
+            .head-input{
+                width: 100%;
+                height: 100%;
+                border: none;
+                text-align: center;
+                &::placeholder{
+                    content: "\e735";
+                    text-align: center;
+                    color: #a1a1a1;
+                }
+            }
+        }
+    }
+    .main-box{
+        width: 100%;
+        flex: 1;
+        overflow: hidden;
+        &.main-margin{
+            margin-top: appRem(100px);
+            margin-bottom: appRem(120px);
+        }
+        &.main-margin-top{
+            margin-top: appRem(100px);
+        }
+        &.main-margin-bottom{
+            margin-bottom: appRem(120px);
+        }
+    }
+    .foot-box{
+        width: 100%;
+        height: appRem(100px);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        z-index: 10;
+        background: #FFFFFF;
+        .foot-list{
+            flex: 1;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            color: #cccccc;
+            &.foot-active{
+                color: #4b71ff;
+                .foot-icon{
+                    .icon{
+                        color: #4b71ff;
+                    }
+                }
+            }
+            .foot-icon{
+                .icon{
+                    color: #cccccc;
+                    font-size: appRem(55px);
+                }
+            }
+        }
+    }
+}
+
+.scroll-box{
+    width: 100%;
+    height: appRem(320px);
+    background: #FFFFFF;
+}
