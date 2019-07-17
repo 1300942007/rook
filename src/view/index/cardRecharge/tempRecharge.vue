@@ -57,7 +57,7 @@
 </template>
 
 <script>
-    import BaseSwiper from "../../base/swiper";
+    import BaseSwiper from "__VIEW__/base/swiper";
     export default {
         name: "TempCardRecharge",
         components: {BaseSwiper},
